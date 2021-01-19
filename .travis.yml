@@ -1,4 +1,5 @@
 language: python
+python: 3.9
 addons:
   apt:
     sources:
@@ -13,7 +14,10 @@ addons:
       - python3.9
       - python3.9-dev
 
-install: pip install tox
+install: 
+  - apt install -y python3-distutils
+  - pip install tox
+
 env:
   matrix:
     # consul 0.7.5
