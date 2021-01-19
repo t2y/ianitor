@@ -5,6 +5,7 @@ addons:
     sources:
       - deadsnakes
     packages:
+      - python3-distutils
       - python3.6
       - python3.6-dev
       - python3.7
@@ -12,9 +13,7 @@ addons:
       - python3.8
       - python3.8-dev
 
-install: 
-  - sudo apt install -y python3-distutils
-  - pip install tox
+install: pip install tox
 
 env:
   matrix:
