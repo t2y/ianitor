@@ -13,7 +13,7 @@ addons:
       - python3.8-dev
 
 install: 
-  - apt install -y python3-distutils
+  - sudo apt install -y python3-distutils
   - pip install tox
 
 env:
